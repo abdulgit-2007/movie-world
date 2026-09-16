@@ -1,0 +1,301 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #111;
+    color: white;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.head a {
+    color: white;
+    text-decoration: none;
+    margin: 14px;
+}
+
+.head a:hover {
+    color: rgb(248, 197, 32);
+    font-size: 20px;
+}
+
+/* SEARCH */
+
+.search {
+    display: flex;
+    width: 340px;
+    margin: 40px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.button {
+    padding: 14px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* MOVIE SECTIONS */
+
+.movie-section {
+    margin: 40px;
+}
+
+.movie-section h2 {
+    margin-bottom: 20px;
+    border-left: 5px solid rgb(248, 197, 32);
+    padding-left: 12px;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* MOVIE CARD */
+
+.movie-card {
+    width: 200px;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    color: white;
+    margin: 10px 0 5px;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* Hide details from main card */
+
+.movie-card p,
+.movie-card a,
+.movie-card button {
+    display: none;
+}
+
+
+/* ========================= */
+/* POPUP */
+/* ========================= */
+
+.movie-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #222;
+    width: 800px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
+.popup-content img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.popup-details {
+    flex: 1;
+}
+
+.popup-details h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.popup-details p {
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.popup-details a {
+    display: inline-block;
+    margin-top: 15px;
+    background: red;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.popup-details a:hover {
+    background: darkred;
+}
+
+.close-popup {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-popup:hover {
+    color: red;
+}
+
+
+/* SEARCH RESULTS */
+
+#searchResults {
+    margin: 30px 40px;
+}
+
+.search-card {
+    display: flex;
+    gap: 25px;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+}
+
+.search-card img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.search-details {
+    color: white;
+}
+
+.search-details h2 {
+    margin-top: 0;
+}
+
+.search-details p {
+    color: #ccc;
+    margin: 8px 0;
+}
+
+.search-details a {
+    display: inline-block;
+    margin-top: 15px;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .movie-section {
+        margin: 25px 15px;
+    }
+
+    .movie-container {
+        justify-content: center;
+    }
+
+    .movie-card {
+        width: 160px;
+    }
+
+    .movie-card img {
+        height: 230px;
+    }
+
+    .popup-content {
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+
+    .popup-content img {
+        width: 180px;
+        height: 260px;
+    }
+
+    .popup-details {
+        width: 100%;
+    }
+
+    .popup-details h2 {
+        font-size: 22px;
+    }
+}
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+}

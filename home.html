@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie World</title>
+
+    <link rel="icon" href="Assets/icons8-movie-16.png">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Movie World</h1>
+
+        <nav class="head">
+            <a href="upload.html">Movie</a>
+            <a href="upload2.html">Web Series</a>
+            <a href="upload3.html">Anime</a>
+            <a href="update.html">Update</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Search -->
+
+    <section class="search">
+
+        <form id="searchForm">
+
+            <input
+                class="input"
+                type="text"
+                id="searchInput"
+                placeholder="Search Here..."
+            >
+
+            <button
+                class="button"
+                type="submit">
+                Search
+            </button>
+
+        </form>
+    </section>
+ <div id="searchResults"></div>
+
+    <!-- ========================= -->
+    <!-- Tamil Dubbed Web Series -->
+    <!-- ========================= -->
+
+    <section class="movie-section">
+
+        <h2>Tamil Dubbed Web Series</h2>
+
+        <div
+            class="movie-container"
+            id="tamilDubbedWebSeries">
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Tamil Web Series -->
+    <!-- ========================= -->
+
+    <section class="movie-section">
+
+        <h2>Tamil Web Series</h2>
+
+        <div
+            class="movie-container"
+            id="tamilWebSeries">
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Tamil Dubbed Movies -->
+    <!-- ========================= -->
+
+    <section class="movie-section">
+
+        <h2>Tamil Dubbed Movie</h2>
+
+        <div
+            class="movie-container"
+            id="tamilDubbedMovies">
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Tamil Movies -->
+    <!-- ========================= -->
+
+    <section class="movie-section">
+
+        <h2>Tamil Movie</h2>
+
+        <div
+            class="movie-container"
+            id="tamilMovies">
+        </div>
+
+    </section>
+
+    <section class="movie-section">
+
+    <h2>Tamil Dubbed Anime</h2>
+
+    <div
+        class="movie-container"
+        id="tamilDubbedAnime">
+    </div>
+
+</section>
+
+
+<section class="movie-section">
+
+    <h2>English Movie</h2>
+
+    <div
+        class="movie-container"
+        id="englishMovies">
+    </div>
+
+</section>
+
+<!-- MOVIE POPUP -->
+
+<div class="movie-popup" id="moviePopup">
+
+    <div class="popup-content">
+
+        <span class="close-popup" id="closePopup">
+            &times;
+        </span>
+
+        <img id="popupPoster" src="" alt="Movie Poster">
+
+        <div class="popup-details">
+
+            <h2 id="popupTitle"></h2>
+
+            <p id="popupCategory"></p>
+
+            <p id="popupDirector"></p>
+
+            <p id="popupWriter"></p>
+
+            <p id="popupCast"></p>
+
+            <p id="popupRating"></p>
+
+            <p id="popupReleaseDate"></p>
+
+            <p id="popupLanguage"></p>
+
+            <p id="popupGenre"></p>
+
+            <p id="popupDuration"></p>
+
+            <a id="popupLink" href="" target="_blank"> Watch Movie </a>
+
+            <a
+    id="whatsappShare"
+    href=""
+    target="_blank"
+    class="whatsapp-button">
+    Share on WhatsApp
+</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>

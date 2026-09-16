@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Anime - Movie World</title>
+    <link rel="icon" href="Assets/icons8-movie-16.png">
+    <link rel="stylesheet" href="upload.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Movie World</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+        </nav>
+
+    </header>
+
+
+    <main class="container">
+
+        <h2>Upload Anime</h2>
+
+        <form id="animeForm">
+
+
+            <!-- Anime Name -->
+
+            <label for="title">
+                Anime Name
+            </label>
+
+            <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Enter anime name"
+            >
+
+
+            <!-- Category -->
+
+            <label for="category">
+                Category
+            </label>
+
+            <select
+                id="category"
+                name="category">
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option value="Tamil Dubbed Anime">
+                    Tamil Dubbed Anime
+                </option>
+
+            </select>
+
+
+            <!-- Director -->
+
+            <label for="director">
+                Director
+            </label>
+
+            <input
+                type="text"
+                id="director"
+                name="director"
+                placeholder="Enter director name"
+            >
+
+
+            <!-- Writer -->
+
+            <label for="writer">
+                Writer
+            </label>
+
+            <input
+                type="text"
+                id="writer"
+                name="writer"
+                placeholder="Enter writer name"
+            >
+
+
+            <!-- Character -->
+
+            <label for="character">
+                Character
+            </label>
+
+            <input
+                type="text"
+                id="character"
+                name="character"
+                placeholder="Example: Naruto, Sasuke, Sakura"
+            >
+
+
+            <!-- Rating -->
+
+            <label for="rating">
+                Rating
+            </label>
+
+            <input
+                type="number"
+                id="rating"
+                name="rating"
+                placeholder="Example: 8.5"
+                min="0"
+                max="10"
+                step="0.1"
+            >
+
+
+            <!-- Release Date -->
+
+            <label for="releaseDate">
+                Release Date
+            </label>
+
+            <input
+                type="date"
+                id="releaseDate"
+                name="releaseDate"
+            >
+
+
+            <!-- Language -->
+
+            <label for="language">
+                Language
+            </label>
+
+            <input
+                type="text"
+                id="language"
+                name="language"
+                placeholder="Example: Tamil"
+            >
+
+
+            <!-- Link -->
+
+            <label for="animeLink">
+                Link
+            </label>
+
+            <input
+                type="url"
+                id="animeLink"
+                name="animeLink"
+                placeholder="Enter anime link"
+            >
+
+
+            <!-- Genre -->
+
+            <label for="genre">
+                Genre
+            </label>
+
+            <input
+                type="text"
+                id="genre"
+                name="genre"
+                placeholder="Example: Action, Adventure"
+            >
+
+
+            <!-- Episode Count -->
+
+           <!-- Duration Type -->
+
+<label for="durationType">
+    Duration Type
+</label>
+
+<select id="durationType" name="durationType">
+
+    <option value="episodeCount">
+        Episode Count
+    </option>
+
+    <option value="runtime">
+        Runtime
+    </option>
+
+</select>
+
+
+<!-- Episode Count -->
+
+<div id="episodeField">
+
+    <label for="episodeCount">
+        Episode Count
+    </label>
+
+    <input
+        type="number"
+        id="episodeCount"
+        name="episodeCount"
+        placeholder="Example: 24"
+        min="1"
+    >
+
+</div>
+
+
+<!-- Runtime -->
+
+<div id="runtimeField" style="display: none;">
+
+    <label for="runtime">
+        Runtime
+    </label>
+
+    <input
+        type="text"
+        id="runtime"
+        name="runtime"
+        placeholder="Example: 24 min"
+    >
+
+</div>
+
+
+            <!-- Poster -->
+
+            <label for="poster">
+                Anime Poster
+            </label>
+
+            <input
+                type="file"
+                id="poster"
+                name="poster"
+                accept="image/*"
+            >
+
+
+            <button type="submit">
+                Upload Anime
+            </button>
+
+
+            <p id="message"></p>
+
+        </form>
+
+    </main>
+
+
+    <script src="upload3.js"></script>
+
+</body>
+
+</html>

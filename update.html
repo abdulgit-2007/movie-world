@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Update Movie - Movie World</title>
+    <link rel="icon" href="Assets/icons8-movie-16.png">
+    <link rel="stylesheet" href="upload.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Movie World</h1>
+
+        <nav>
+
+            <a href="home.html">
+                Home
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="container">
+
+        <h2>Update Movie</h2>
+
+
+        <!-- Select Movie -->
+
+        <label for="movieSelect">
+            Select Movie
+        </label>
+
+        <select id="movieSelect">
+
+            <option value="">
+                Select Movie
+            </option>
+
+        </select>
+
+
+        <form id="updateForm">
+
+            <!-- Movie Name -->
+
+            <label for="title">
+                Movie Name
+            </label>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Movie name">
+
+
+            <!-- Category -->
+
+            <label for="category">
+                Category
+            </label>
+
+            <select id="category">
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option value="Tamil Dubbed Web Series">
+                    Tamil Dubbed Web Series
+                </option>
+
+                <option value="Tamil Web Series">
+                    Tamil Web Series
+                </option>
+
+                <option value="Tamil Dubbed Movie">
+                    Tamil Dubbed Movie
+                </option>
+
+                <option value="Tamil Movie">
+                    Tamil Movie
+                </option>
+
+                <option value="Tamil Dubbed Anime">
+    Tamil Dubbed Anime
+</option>
+
+<option value="English Movie">
+    English Movie
+</option>
+
+            </select>
+
+
+            <!-- Director -->
+
+            <label for="director">
+                Director
+            </label>
+
+            <input
+                type="text"
+                id="director"
+                placeholder="Director">
+
+
+            <!-- Writer -->
+
+            <label for="writer">
+                Writer
+            </label>
+
+            <input
+                type="text"
+                id="writer"
+                placeholder="Writer">
+
+
+            <!-- Cast -->
+
+            <label for="cast">
+                Cast
+            </label>
+
+            <input
+                type="text"
+                id="cast"
+                placeholder="Cast">
+
+
+            <!-- Rating -->
+
+            <label for="rating">
+                Rating
+            </label>
+
+            <input
+                type="number"
+                id="rating"
+                min="0"
+                max="10"
+                step="0.1">
+
+
+            <!-- Release Date -->
+
+            <label for="releaseDate">
+                Release Date
+            </label>
+
+            <input
+                type="date"
+                id="releaseDate">
+
+
+            <!-- Language -->
+
+            <label for="language">
+                Language
+            </label>
+
+            <input
+                type="text"
+                id="language"
+                placeholder="Language">
+
+
+            <!-- Link -->
+
+            <label for="movieLink">
+                Link
+            </label>
+
+            <input
+                type="url"
+                id="movieLink"
+                placeholder="Movie / Series link">
+
+
+            <!-- Genre -->
+
+            <label for="genre">
+                Genre
+            </label>
+
+            <input
+                type="text"
+                id="genre"
+                placeholder="Genre">
+
+
+            <!-- Runtime -->
+
+            <label for="runtime">
+                Runtime
+            </label>
+
+            <input
+                type="text"
+                id="runtime"
+                placeholder="Example: 2h 30min">
+
+
+            <!-- Episode Count -->
+
+            <label for="episodeCount">
+                Episode Count
+            </label>
+
+            <input
+                type="number"
+                id="episodeCount"
+                placeholder="Example: 10">
+
+
+            <!-- Poster -->
+
+            <label for="poster">
+                Change Poster
+            </label>
+
+            <input
+                type="file"
+                id="poster"
+                accept="image/*">
+
+
+            <button type="submit">
+                Update Movie
+            </button>
+
+
+            <p id="message"></p>
+
+        </form>
+
+    </main>
+
+
+    <script src="update.js"></script>
+
+</body>
+
+</html>

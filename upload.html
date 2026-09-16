@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Movie - Movie World</title>
+    <link rel="icon" href="Assets/icons8-movie-16.png">
+    <link rel="stylesheet" href="upload.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Movie World</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+        </nav>
+    </header>
+
+
+    <main class="container">
+
+        <h2>Upload Movie</h2>
+
+        <form id="movieForm">
+
+            <!-- Movie Name -->
+            <label for="title">Movie Name</label>
+            <input type="text"
+                   id="title"
+                   name="title"
+                   placeholder="Enter movie name">
+<label for="category">Category</label>
+
+<select id="category" name="category">
+
+    <option value="">Select Category</option>
+
+    <option value="Tamil Dubbed Web Series">
+        Tamil Dubbed Web Series
+    </option>
+
+    <option value="Tamil Web Series">
+        Tamil Web Series
+    </option>
+
+    <option value="Tamil Dubbed Movie">
+        Tamil Dubbed Movie
+    </option>
+
+    <option value="Tamil Movie">
+        Tamil Movie
+    </option>
+
+    <option value="Tamil Dubbed Anime">
+    Tamil Dubbed Anime
+</option>
+
+<option value="English Movie">
+    English Movie
+</option>
+
+</select>
+
+            <!-- Director -->
+            <label for="director">Director</label>
+            <input type="text"
+                   id="director"
+                   name="director"
+                   placeholder="Enter director name">
+
+
+            <!-- Writer -->
+            <label for="writer">Writer</label>
+            <input type="text"
+                   id="writer"
+                   name="writer"
+                   placeholder="Enter writer name">
+
+
+            <!-- Cast -->
+            <label for="cast">Cast</label>
+            <input type="text"
+                   id="cast"
+                   name="cast"
+                   placeholder="Example: Vijay, Trisha, Prakash Raj">
+
+
+            <!-- Rating -->
+            <label for="rating">Rating</label>
+            <input type="number"
+                   id="rating"
+                   name="rating"
+                   placeholder="Example: 8.5"
+                   min="0"
+                   max="10"
+                   step="0.1">
+
+
+            <!-- Release Date -->
+            <label for="releaseDate">Release Date</label>
+            <input type="date"
+                   id="releaseDate"
+                   name="releaseDate">
+
+
+            <!-- Language -->
+            <label for="language">Language</label>
+            <input type="text"
+                   id="language"
+                   name="language"
+                   placeholder="Example: Tamil">
+
+
+            <!-- Genre -->
+            <label for="genre">Genre</label>
+            <input type="text"
+                   id="genre"
+                   name="genre"
+                   placeholder="Example: Action, Thriller">
+
+
+            <!-- Runtime -->
+            <label for="runtime">Runtime</label>
+            <input type="text"
+                   id="runtime"
+                   name="runtime"
+                   placeholder="Example: 2h 30min">
+
+
+            <!-- Poster -->
+            <label for="poster">Movie Poster</label>
+            <input type="file"
+                   id="poster"
+                   name="poster"
+                   accept="image/*">
+
+
+            <!-- Movie Link -->
+            <label for="movieLink">Movie Link</label>
+            <input type="url"
+                   id="movieLink"
+                   name="movieLink"
+                   placeholder="Enter movie link">
+
+
+            <button type="submit">
+                Upload Movie
+            </button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </main>
+
+
+    <script src="upload.js"></script>
+
+</body>
+</html>
