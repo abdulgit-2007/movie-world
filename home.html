@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
 
+    if (localStorage.getItem("movieWorldAccess") !== "true") {
+
+        window.location.href = "login.html";
+
+    }
+
+</script>
     <title>Movie World</title>
 
     <link rel="icon" href="Assets/icons8-movie-16.png">
